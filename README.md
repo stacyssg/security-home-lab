@@ -1,23 +1,25 @@
-# security-home-lab
+# Security Labs Repository
 
-## Objective
-Create a virtual environment with Ubuntu to start performing labs
+This repository contains my security lab exercises, scripts, and notes.
 
-## Environment
-Windows Subsystem for Linux (WSL), 
-nmap - security scanning
-net-tools - network commands
-curl - testing web servers
-git - project management
-htop - process monitoring
-tree - directory viewing
+## Structure
 
-## Process
-Dowload Ubuntu from Windows store. Turned on WSL from powerShell administrator, accessed terminal, update and installed tools
+- `template-lab/` - Base folder to copy for new labs.
+- `labs/` - Completed labs (lab01, lab02, ...).
+- `tools/` - Reusable scripts and custom tools.
+- `docs/` - General notes and reference material.
 
-## Findings
-I discovered Windows has it's incorporated VM software for linux, I didn't have to download VM software, I learned about tools incorporated into the terminal useful for security.
+## Lab Folder Structure
 
+Each lab folder contains:
 
-## Skills Demonstrated
-Learned how to navigate Linux with commands, File system, Users, Processes, Networking, Nmap, and Logs.
+- `notes.md` - Lab objectives, steps, commands, and observations.
+- `scripts/` - Scripts used or developed for the lab.
+- `results/` - Outputs, captures, or results from lab exercises (do not include sensitive data).
+
+## Guidelines
+
+1. Copy `template-lab/` for each new lab.
+2. Use descriptive commit messages, e.g., `Lab01: Added nmap scanning scripts`.
+3. Never store sensitive information such as real credentials.
+4. Keep scripts runnable for reproducibility.
